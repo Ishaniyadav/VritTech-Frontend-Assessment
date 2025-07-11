@@ -50,17 +50,17 @@ This project includes the implementation of a visually engaging UI section and a
 
 ## 📸 Screenshots
 
-![UI Design Part 1](Desktop/screenshot1.png)  
+![UI Design Part 1](https://github.com/Ishaniyadav/VritTech-Frontend-Assessment/blob/main/screenshot1.png)  
 
 
-![UI Design Part 2](Desktop/screenshot2.png)  
+![UI Design Part 2](https://github.com/Ishaniyadav/VritTech-Frontend-Assessment/blob/main/screenshot2.png)  
 
 
 ---
 
 ### 🟣 Animation (JavaScript Grid)
 
-![Animation Screenshot](Desktop/screenshot3.png)
+![Animation Screenshot](https://github.com/Ishaniyadav/VritTech-Frontend-Assessment/blob/main/screenshot3.png)
 
 
 ---

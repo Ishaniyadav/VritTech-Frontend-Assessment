@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.main-container {
+  background: white;
+  border-radius: 48px;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.courses-section {
+  background: transparent;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle {
+  color: rgb(144, 139, 139);
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.highlight {
+  color: #1ec97f;
+  font-weight: 700;
+}
+
+.courses-container {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+}
+
+.course-box {
+  border-radius: 40px;
+  padding: 36px 32px 32px 32px;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+.all-courses {
+  background: #c6283b;
+  color: #fff;
+  flex: 1.7;
+  position: relative;
+  min-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.all-courses .header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  min-height: 90px;
+}
+
+.icons {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.icons img {
+  margin-top: 100px;
+  width: 80px;
+  height: 150px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.07));
+}
+
+.view-link {
+  position: absolute;
+  top: 0;
+  right: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  opacity: 0.95;
+  letter-spacing: 0.01em;
+  transition: text-decoration 0.2s;
+  background: none;
+}
+
+.view-link:hover {
+  text-decoration: underline;
+}
+
+.count {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.2rem;
+  margin-top: auto;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.all-courses .count {
+  margin-top: 2.5rem;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.number {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+.all-courses {
+  background: #c6283b;
+  color: #fff;
+  flex: 1.7;
+  position: relative;
+  min-width: 480px;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.all-courses .number {
+  color: #fff;
+  font-size: 5rem;
+}
+
+.text h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.text p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.upcoming,
+.ongoing {
+  background: #ffe9ec;
+  color: #c6283b;
+  flex: 1;
+  min-width: 100px;
+  min-height: 150px;
+  border-radius: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* --- VERTICAL LABEL FIX --- */
+.vertical-label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 220px;
+  height: 0;
+  padding: 0;
+  z-index: 2;
+  word-break: break-word;
+  margin-left: 150px;
+}
+
+.vertical-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #c6283b;
+  margin-bottom: 0;
+  line-height: 1.1;
+  text-align: left;
+  row-gap: 100px;
+}
+
+.vertical-desc {
+  font-size: 1.05rem;
+  color: #c6283b;
+  opacity: 0.8;
+  margin-top: 2px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+/* Make numbers even larger and bolder */
+.upcoming .number,
+.ongoing .number {
+  font-size: 7rem;
+  font-weight: 900px;
+  color: #c6283b;
+  line-height: 1;
+  margin-top: 260px;
+}
+
+.upcoming .count,
+.ongoing .count {
+  margin: 0 0 36px 36px;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .courses-section {
+    max-width: 98vw;
+    padding: 2rem 0 0 0;
+  }
+
+  .courses-container {
+    gap: 1.2rem;
+  }
+
+  .main-container {
+    padding: 24px 0 0 0;
+    border-radius: 32px;
+  }
+
+  .vertical-label {
+    position: static;
+    transform: none;
+    align-items: flex-start;
+    height: auto;
+    margin-bottom: 12px;
+    width: auto;
+  }
+
+  .count {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 24px auto;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 0 0 6px #1746d3;
+  padding: 36px 32px 48px 32px;
+}
+
+header h2 {
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 32px 0;
+  letter-spacing: -1px;
+}
+
+.step-in {
+  color: #2f845d;
+}
+
+.in {
+  color: black;
+}
+
+.skill-up {
+  color: #2f845d;
+}
+
+.up {
+  color: black;
+}
+
+.stand-out {
+  color: #2f845d;
+}
+
+.out {
+  color: black;
+}
+
+.rocket {
+  margin-left: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 26px 26px;
+  margin-top: 32px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 8px 32px 0 rgba(44, 62, 80, 0.10);
+  padding: 36px 36px 36px 36px;
+  min-height: 300px;
+  position: relative;
+  overflow: visible;
+}
+
+/* Cards 2 and 4: text on left, image on right */
+.card-blue,
+.card-yellow {
+  flex-direction: row-reverse;
+}
+
+.card-img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-right: 32px;
+  margin-bottom: 0;
+  flex-shrink: 0;
+}
+
+.card1 {
+  position: absolute;
+  left: -45px;
+  height: 355px;
+  width: auto;
+}
+
+.card2 {
+  position: absolute;
+  right: 18px;
+  height: 358px;
+  width: auto;
+
+}
+
+.card3 {
+  position: absolute;
+  height: 410px;
+  width: 350px;
+  left: -50px;
+}
+
+.card4 {
+  position: absolute;
+  right: 18px;
+  height: 328px;
+  width: auto;
+}
+
+/* Adjust margin for cards 2 and 4 where image is on the right */
+.card-blue .card-img,
+.card-yellow .card-img {
+  margin-right: 0;
+  margin-left: 32px;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Cards 1 and 3: right-aligned text */
+.card-red .card-content,
+.card-purple .card-content {
+  text-align: right;
+  align-items: flex-end;
+}
+
+/* Cards 2 and 4: left-aligned text */
+.card-blue .card-content,
+.card-yellow .card-content {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.card .subtitle {
+  color: #fff;
+  font-size: 1.18rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card .desc {
+  /* color: #fff;
+  font-size: 1.08rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0; */
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  width: 342px;
+}
+
+.card-red {
+  background: #f15b6c;
+}
+
+.card-blue {
+  background: #3a8fd3;
+}
+
+.card-purple {
+  background: #6c63ff;
+}
+
+.card-yellow {
+  background: #ffd86b;
+}
+
+.card-yellow h3,
+.card-yellow .subtitle,
+.card-yellow .desc {
+  color: #2e2e2e;
+}
+
+.card-yellow .card-content h3 {
+  color: #2e2e2e;
+}
+
+.card-yellow .card-content .subtitle,
+.card-yellow .card-content .desc {
+  color: #2e2e2e;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 18px 8px 24px 8px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    grid-gap: 28px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 0;
+    padding: 24px 14px 24px 14px;
+  }
+
+  .card-img {
+    margin: 0 0 18px 0;
+    width: 120px;
+    height: 120px;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="video-area" id="videoArea">
+        <canvas id="videoCanvas" width="800" height="600"></canvas>
+        <div class="timeline-bar">
+            <div class="timeline" id="timeline">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+        <div class="controls-row">
+            <div class="controls-group left-group">
+                <button class="icon-btn play-btn" id="playBtn" title="Play">
+                    <span id="playIcon">&#9654;</span>
+                    <span id="pauseIcon" style="display:none;">&#10073;&#10073;</span>
+                </button>
+                <button class="icon-btn" id="rewindBtn" title="Rewind 10s">
+                    <span class="icon-rotate">&#8634;</span><sub>10</sub>
+                </button>
+                <button class="icon-btn" id="forwardBtn" title="Forward 10s">
+                    <span class="icon-rotate">&#8635;</span><sub>10</sub>
+                </button>
+                <div class="time" id="timeDisplay">0:00 / 0:07</div>
+            </div>
+            <div class="controls-group right-group">
+                <button class="icon-btn" id="muteBtn" title="Mute">
+                    <span id="volumeIcon">&#128266;</span>
+                    <span id="mutedIcon" style="display:none;">&#128263;</span>
+                </button>
+                <button class="icon-btn" id="ccBtn" title="Subtitles/closed captions (c)">
+                    <span class="cc-icon">CC</span>
+                </button>
+                <button class="icon-btn" id="speedBtn" title="Playback speed">
+                    <span id="speedLabel">1x</span>
+                </button>
+                <div class="speed-menu" id="speedMenu">
+                    <div data-speed="0.25">0.25</div>
+                    <div data-speed="0.5">0.5</div>
+                    <div data-speed="0.75">0.75</div>
+                    <div data-speed="1" class="selected">1</div>
+                    <div data-speed="1.25">1.25</div>
+                    <div data-speed="1.5">1.5</div>
+                    <div data-speed="1.75">1.75</div>
+                    <div data-speed="2">2</div>
+                </div>
+                <button class="icon-btn" id="settingsBtn" title="Settings">
+                    <span class="settings-icon">&#9881;</span>
+                </button>
+                <div class="settings-menu" id="settingsMenu">
+                    <div class="settings-item"><span class="settings-icon">&#128249;</span> Picture-in-picture</div>
+                    <div class="settings-item"><span class="settings-icon">CC</span> Subtitles/CC</div>
+                    <div class="settings-item"><span class="settings-icon">&#8597;</span> Quality</div>
+                    <div class="settings-item" id="settingsSpeed"><span class="settings-icon">&#128336;</span> Playback speed</div>
+                    <div class="settings-item disabled"><span class="settings-icon">&#128221;</span> Transcript</div>
+                </div>
+                <button class="icon-btn" id="fullscreenBtn" title="Fullscreen">
+                    <span class="fullscreen-icon">&#x26F6;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
